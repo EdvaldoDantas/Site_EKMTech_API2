@@ -4,10 +4,10 @@ namespace Site_EKMTech_API2.Interfaces
 {
     public interface IUserRepository
     {
-        Task<List<User>> GetUsers();
-        Task<User> GetUser(int id);
-        Task<User> GetUser(string username);
-        Task<User> AddUser(User user);
-        Task<User> DeleteUser(int id);
+        Task<RespModel<List<User>>> GetUsers();
+        Task<RespModel<User>> GetUser(int id);
+        Task<RespModel<User>> GetUser(string username);
+        Task<RespModel<User>> AddUser(User user);
+        Task<RespModel<User>> DeleteUser(int id);
     }
 }
